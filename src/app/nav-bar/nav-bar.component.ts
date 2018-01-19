@@ -29,6 +29,30 @@ export class NavBarComponent implements OnInit {
     //    close: 'Ok',
     //    closeOnSelect: false // Close upon selecting a date,
     //  });
+    (function ($) {
+      $(document).ready(function(){
+
+        // hide .navbar first
+        $(".navbar-fixed").show();
+
+        // fade in .navbar
+        $(function () {
+            $(window).scroll(function () {
+
+                     // set distance user needs to scroll before we start fadeIn
+                if ($(this).scrollTop() > 100) {
+                    $('.navbar-fixed').fadeOut();
+                } else {
+                    $('.navbar-fixed').fadeIn();
+                }
+            });
+        });
+
+    });
+      }(jQuery));
+
+
+
 
 
   }
