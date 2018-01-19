@@ -1,0 +1,27 @@
+/* AppComponent's private CSS styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.card.large800{
+  height: 800px;
+}
+
+
+.container1 {
+  margin: 0 auto;
+  max-width: 1980px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container1 {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container1 {
+    width: 70%;
+  }
+}
