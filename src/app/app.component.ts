@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
+import {} from '@types/googlemaps';
 // declare var jquery:any;
 // declare var $ :any;
 
@@ -9,4 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'OwnersProject';
+  constructor(db: AngularFirestore) {
+
+  }
 }

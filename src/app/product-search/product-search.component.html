@@ -1,12 +1,4 @@
-<!-- <h3>Top Owners</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let owner of owners" class="col-1-4"
-    routerLink="/detail/{{owner.id}}">
-    <div class="module owner">
-      <h4>{{owner.name}}</h4>
-    </div>
-  </a>
-</div> -->
+<h1>searching for something in {{city}} on the {{date}}</h1>
 <div class="row" >
   <div *ngFor="let product of products">
       <div class="col l{{product.col}} " routerLink="/detail/{{product.id}}">
@@ -19,7 +11,7 @@
              <p>{{product.description}}</p>
            </div>
            <div class="card-action">
-             <a routerLink="/detail/{{product.id}}">{{product.link}}</a>
+             <a href="/detail/{{product.id}}">{{product.link}}</a>
            </div>
          </div>
       </div>

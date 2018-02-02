@@ -7,51 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
+  date ="01-02-2018";
+  city ="berlin";
   constructor() {
+
   }
 
+
   ngOnInit() {
-
-    // $('.datepicker').pickadate({
-    //   selectMonths: true, // Creates a dropdown to control month
-    //   selectYears: 15, // Creates a dropdown of 15 years to control year,
-    //   today: 'Today',
-    //   clear: 'Clear',
-    //   close: 'Ok',
-    //   closeOnSelect: false // Close upon selecting a date,
-    // });
-    // $('.datepicker').pickadate({
-    //    selectMonths: true, // Creates a dropdown to control month
-    //    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    //    today: 'Today',
-    //    clear: 'Clear',
-    //    close: 'Ok',
-    //    closeOnSelect: false // Close upon selecting a date,
-    //  });
-    (function ($) {
-      $(document).ready(function(){
-
-        // hide .navbar first
-        $(".navbar-fixed").show();
-
-        // fade in .navbar
-        $(function () {
-            $(window).scroll(function () {
-
-                     // set distance user needs to scroll before we start fadeIn
-                if ($(this).scrollTop() > 100) {
-                    $('.navbar-fixed').fadeOut();
-                } else {
-                    $('.navbar-fixed').fadeIn();
-                }
-            });
-        });
-
-    });
-      }(jQuery));
-
-
+    // this.date = (<HTMLInputElement>document.getElementById('datepicker')).value;
+    // this.city =(<HTMLInputElement>document.getElementById('autocomplete')).value;
+this.city ="ssssss";
 
 
 

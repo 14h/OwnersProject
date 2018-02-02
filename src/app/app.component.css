@@ -1,8 +1,8 @@
 /* AppComponent's private CSS styles */
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 .card.large800{
   height: 800px;
 }
@@ -22,6 +22,6 @@ img {
 
 @media only screen and (min-width: 993px) {
   .container1 {
-    width: 70%;
+    width: 85%;
   }
 }
